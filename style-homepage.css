@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #190e72;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    background-color: #190e72;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.play-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #190e72;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.play-button:hover {
+    background-color: #45a049;
+}
+
+/* Styles for Game Container */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styles for Memory Game */
+.memory-game {
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.memory-card {
+    width: calc(25% - 10px);
+    height: calc(25% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+}
+
+.memory-card .front-face,
+.memory-card .back-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 5px;
+}
+
+.memory-card .front-face {
+    transform: rotateY(180deg);
+}
+
+.memory-card .back-face {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+/* Styles for Celebration Overlay */
+.celebration-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.celebration-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.celebration-message {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.celebration-message h2 {
+    margin: 0 0 10px;
+    font-size: 2em;
+}

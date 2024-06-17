@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Safety Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Road Safety Memory Game</h1>
+        <nav>
+            <a href="homepage.html">Back</a>
+            
+        </nav>
+        <p>Match the pairs of road safety signs to win!</p>
+    </header>
+    <div class="game-container">
+        <div class="memory-game">
+            <div class="memory-card" data-framework="stop">
+                <img class="front-face" src="images/stop-sign.png" alt="Stop Sign">
+                <img class="back-face" src="images/back.png" alt="Card Back">
+            </div>
+            <div class="memory-card" data-framework="stop">
+                <img class="front-face" src="images/stop-sign.png" alt="Stop Sign">
+                <img class="back-face" src="images/back.png" alt="Card Back">
+            </div>
+            <div class="memory-card" data-framework="yield">
+                <img class="front-face" src="images/yield-sign.png" alt="Yield Sign">
+                <img class="back-face" src="images/back.png" alt="Card Back">
+            </div>
+            <div class="memory-card" data-framework="yield">
+                <img class="front-face" src="images/yield-sign.png" alt="Yield Sign">
+                <img class="back-face" src="images/back.png" alt="Card Back">
+            </div>
+            <div class="memory-card" data-framework="crosswalk">
+                <img class="front-face" src="images/crosswalk-sign.jpg" alt="Crosswalk Sign">
+                <img class="back-face" src="images/back.png" alt="Card Back">
+            </div>
+            <div class="memory-card" data-framework="crosswalk">
+                <img class="front-face" src="images/crosswalk-sign.jpg" alt="Crosswalk Sign">
+                <img class="back-face" src="images/back.png" alt="Card Back">
+            </div>
+            <div class="memory-card" data-framework="no-entry">
+                <img class="front-face" src="images/no-entry-sign.jpg" alt="No Entry Sign">
+                <img class="back-face" src="images/back.png" alt="Card Back">
+            </div>
+            <div class="memory-card" data-framework="no-entry">
+                <img class="front-face" src="images/no-entry-sign.jpg" alt="No Entry Sign">
+                <img class="back-face" src="images/back.png" alt="Card Back">
+            </div>
+        </div>
+    </div>
+    <div id="celebration-overlay" class="celebration-overlay">
+        <div class="celebration-message">
+            <h2>Congratulations!</h2>
+            <p>You matched all the pairs!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
