@@ -1,5 +1,6 @@
 body {
     background-image: url('images/background.png');
+    background-opacity: 50;
     background-size: cover; /* Cover the entire area */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -9,7 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #0f0f0f;
     font-family: Arial, sans-serif;
     margin: 0;
 }
